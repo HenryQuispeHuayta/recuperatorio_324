@@ -2,10 +2,8 @@ from PIL import Image
 import PIL
 from numpy import imag
 
-imagen = Image.open(r'1.jpg')
-imagenBordes = Image.open(r'1.jpg')
-
-luz = 2
+imagen = Image.open('3.png')
+imagenBordes = Image.open('3.png')
 
 width = imagen.size[0] - 1
 height = imagen.size[1] - 1
