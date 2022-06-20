@@ -1,6 +1,6 @@
-Pagar<br>
+<!-- Pagar<br> -->
 <?php
-echo $_SESSION['ru'];
+// echo $_SESSION['ru'];
 // echo $sino;
 // echo $proceso;
 // $sql4="SELECT * FROM `FlujoProcesoCondicionante` WHERE Flujo='$flujo' AND Proceso='$proceso'";
