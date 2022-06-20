@@ -1,1 +1,1 @@
-Fin<br>
+Termino su inscripcion<br>
