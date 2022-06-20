@@ -1,3 +1,5 @@
+<?php include ('header.php'); ?>
+<?php echo "Hola ".$_SESSION["nombre"]?>
 <?php
 include "conexion.inc.php";
 $flujo=$_GET["flujo"];
@@ -14,35 +16,15 @@ $procesoanterior=$proceso;
 $proceso=$fila['ProcesoSiguiente'];
 include $pantallalogica;
 ?>
-<html>
-<body>
-	<?php
-		// session_destroy();
-		if($_SESSION["id"]){
-	?>
-			<nav>
-				<ul>
-					<li><a href="Bandeja_en.php">Bandeja</a></li>
-				</ul>
-			</nav>	
-	<?php
-		}
-		else{
-			session_destroy();
-		}
-	?>
-	Contenido<br>
-	<form action="motor.php" method="GET">
-		<!--iframe src="pantalla.php"></iframe-->
-		<input type="hidden" name="flujo" value="<?php echo $flujo;?>"/>
-		<input type="hidden" name="proceso" value="<?php echo $proceso;?>"/>
-		<input type="hidden" name="procesoanterior" value="<?php echo $procesoanterior;?>"/>
-		<?php
-		//echo $pantalla;
-		include $pantalla;
-		?>
-		<input type="submit" name="Anterior" value="Anterior"/>
-		<input type="submit" name="Siguiente" value="Siguiente"/>
-	</form>
-</body>
-</html>
+
+
+<form action="motor.php" method="GET">
+	<input type="hidden" name="flujo" value="<?php echo $flujo;?>"/>
+	<input type="hidden" name="proceso" value="<?php echo $proceso;?>"/>
+	<input type="hidden" name="procesoanterior" value="<?php echo $procesoanterior;?>"/>
+	<?php include $pantalla; ?>
+	<input type="submit" name="Anterior" value="Anterior"/>
+	<input type="submit" name="Siguiente" value="Siguiente"/>
+
+
+</form>
