@@ -4,16 +4,23 @@
 include "conexion.inc.php";
 $flujo=$_GET["flujo"];
 $proceso=$_GET["proceso"];
+$ru=$_SESSION["ru"];
 $sql="select * from FlujoProceso ";
 $sql.="where Flujo='$flujo' and Proceso='$proceso'";
 $resultado=mysqli_query($con, $sql);
 $fila=mysqli_fetch_array($resultado);
+$sql1="select * from Inscritos ";
+$sql1.="where ru='$ru' ";
+$resultado1=mysqli_query($con, $sql1);
+$fila1=mysqli_fetch_array($resultado1);
 $pantalla=$fila['Pantalla'];
 $pantalla.=".inc.php";
 $pantallalogica=$fila['Pantalla'];
 $pantallalogica.=".main.inc.php";
 $procesoanterior=$proceso;
 $proceso=$fila['ProcesoSiguiente'];
+$sino=$fila1['pago'];
+$tipo=$fila['Tipo'];
 include $pantallalogica;
 ?>
 
