@@ -58,7 +58,7 @@ kernel[2, 1] = 2
 kernel[2, 2] = 1
 
 gy = conv(imagenIn, kernel)
-cv2.imshow('gradiente y', gy)
+# cv2.imshow('gradiente y', gy)
 
 kernel[0, 0] = -1
 kernel[0, 1] = 0
@@ -71,7 +71,7 @@ kernel[2, 1] = 0
 kernel[2, 2] = 2
 
 gx = conv(imagenIn, kernel)
-cv2.imshow('gradiente x', gx)
+# cv2.imshow('gradiente x', gx)
 gSobel = norm(gx, gy)
 
 cv2.imshow('Sobel', gSobel)
