@@ -55,7 +55,7 @@ if(!empty($_SESSION["activa"])){
     <section class="secionLogin">
         <form action="" method="POST">
             <h3>Iniciar Sesión</h3>
-            <img src="../img/login.png" alt="Login">
+            <img src="login.png" alt="Login">
             <input type="text" name="user" placeholder="Usuario">
             <input type="password" name="pass" placeholder="Contraseña">
             <div class="alerta"><?php echo isset($alerta)?$alerta:"";?></div>

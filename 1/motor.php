@@ -14,6 +14,7 @@ $pantalla.=".motor.inc.php";
 $sino="a";
 include $pantalla;
 echo $sql;
+
 // if($procesosiguiente == " "){
 // 	if($tipo=='C'){
 // 		$ru=$_SESSION["ru"];

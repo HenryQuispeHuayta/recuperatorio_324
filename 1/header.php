@@ -11,7 +11,7 @@
     <header>
         <div class="separacionH">
             <h1>Facultad de Ciencias Puras y Naturales</h1>
-            <a href="cerrar.php"><img class="cerrar" src="http://localhost/324-primerParcial/img/logout.png" alt="Cerrar sesion"></a>
+            <a href="cerrar.php"><img class="cerrar" src="logout.png" alt="Cerrar sesion"></a>
         </div>
     </header>
     <nav>

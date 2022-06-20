@@ -1,5 +1,7 @@
 <?php include ('header.php'); ?>
-<?php echo "Hola ".$_SESSION["nombre"]?>
+<div class="nombre">
+	<?php echo "Hola ".$_SESSION["nombre"]?>
+</div>
 <?php
 include "conexion.inc.php";
 $flujo=$_GET["flujo"];
@@ -30,8 +32,7 @@ include $pantallalogica;
 	<input type="hidden" name="proceso" value="<?php echo $proceso;?>"/>
 	<input type="hidden" name="procesoanterior" value="<?php echo $procesoanterior;?>"/>
 	<?php include $pantalla; ?>
-	<input type="submit" name="Anterior" value="Anterior"/>
-	<input type="submit" name="Siguiente" value="Siguiente"/>
-
+	<input type="submit" name="Anterior" <?php if($tipo=="I"){?>disabled<?php }?> value="Anterior"/>
+	<input type="submit" name="Siguiente" <?php if($tipo=="F"){?>disabled<?php }?> value="Siguiente"/>
 
 </form>
