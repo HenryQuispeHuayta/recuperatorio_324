@@ -10,7 +10,7 @@ $materia1=$fila1['materia1'];
 $materia2=$fila1['materia2'];
 // echo $fila1;
 ?>
-<table>
+<table class="tabla">
     <tr>
         <th>Materia 1</th>
         <th>Materia 2</th>

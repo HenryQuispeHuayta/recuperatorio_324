@@ -2,7 +2,7 @@ from tkinter import Image
 import cv2
 import numpy as np
 
-imagenIn = cv2.imread('1.jpg', 0)
+imagenIn = cv2.imread('3.png', 0)
 
 def convT(imagen):
     imagenCopia = imagen.copy()

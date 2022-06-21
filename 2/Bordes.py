@@ -28,4 +28,5 @@ for i in range(0,width):
         if((restax + restay) >= 10):
             imagen.putpixel((x, y), (color, color, color))
 
-imagen = imagen.save('nuevo.jpg')
+# imagen = imagen.save('nuevo.jpg')
+imagen = imagen.show()

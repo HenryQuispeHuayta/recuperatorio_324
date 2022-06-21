@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="separacionH">
-            <h1>Facultad de Ciencias Puras y Naturales</h1>
+            <h1>Carrera de Informatica</h1>
             <a href="cerrar.php"><img class="cerrar" src="logout.png" alt="Cerrar sesion"></a>
         </div>
     </header>

@@ -1,7 +1,7 @@
 SePago<br>
 <?php
-echo $sino;
-echo $tipo;
+// echo $sino;
+// echo $tipo;
 ?>
 <!-- <form>
     <input type="checkbox" name="pago"> 
